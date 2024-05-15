@@ -1,0 +1,31 @@
+{
+  "name": "raph",
+  "version": "1.0.0",
+  "description": "CLI tool to generate fastapi or vuejs template",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "start": "npx tsc && node build/index.js"
+  },
+  "bin": {
+    "raph": "../build/index.js"
+  },
+  "keywords": ["raph", "digital lab", "devoteam", "cookiecutter"],
+  "author": "Valdo NEGOU",
+  "license": "ISC",
+  "dependencies": {
+    "@inquirer/prompts": "^5.0.3",
+    "g": "^2.0.1",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.20",
+    "@types/yargs": "^17.0.32",
+    "typescript": "^5.3.3"
+  },
+  "engines" : { 
+    "node" : ">=18.0.0"
+  },
+  "engineStrict": true
+}

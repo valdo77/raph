@@ -40,13 +40,12 @@ const select_1 = __importDefault(require("@inquirer/select"));
 const input_1 = __importDefault(require("@inquirer/input"));
 const confirm_1 = __importDefault(require("@inquirer/confirm"));
 const yargs_1 = __importDefault(require("yargs"));
-const spinners = __importStar(require("cli-spinners"));
 const child = __importStar(require("child_process"));
 const fs = __importStar(require("fs"));
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
-        const options = yargs_1.default.usage('sdsd')
-            .command("init", "description")
+        const options = yargs_1.default.usage('raph init')
+            .command("init", "Start template generation")
             .help(true)
             .argv;
         var template = "";
@@ -147,7 +146,6 @@ function main() {
                     ],
                 });
             }
-            console.log(spinners.dots9);
             if (template === "vuejs") {
                 data['navbar'] = yield (0, confirm_1.default)({ message: 'Do you want a navbar ? (Dark theme & i18n included)', default: false });
                 data['sidebar'] = yield (0, confirm_1.default)({ message: 'Do you want a sidebar ?', default: false });

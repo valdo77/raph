@@ -1,7 +1,7 @@
 {
-  "name": "raph",
-  "version": "1.0.0",
-  "description": "CLI tool to generate fastapi or vuejs template",
+  "name": "dgtl-raph",
+  "version": "1.0.1",
+  "description": "A CLI (Command Line Interface) tool for application template generation that allows developers to quickly create project structures based on predefined templates, all from the command line.",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +11,7 @@
   "bin": {
     "raph": "../build/index.js"
   },
-  "keywords": ["raph", "digital lab", "devoteam", "cookiecutter"],
+  "keywords": ["raph", "digital lab", "devoteam", "cookiecutter", "fastapi", "vuejs"],
   "author": "Valdo NEGOU",
   "license": "ISC",
   "dependencies": {
